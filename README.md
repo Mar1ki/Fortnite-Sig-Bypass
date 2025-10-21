@@ -1,4 +1,4 @@
-# Fortnite Signature Bypass for 19.10 
+# Fortnite Signature Bypass for 17.50
 
 ## HOW TO USE:
 1. Download the DLL from [releases](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/releases/tag/19.10).
