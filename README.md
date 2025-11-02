@@ -5,7 +5,7 @@
 
 - [14.60](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/14.60)
 - [15.30](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/15.30)
-- [15.50](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/15.30)
+- [15.50](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/15.50)
 - [16.40](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/16.40)
 - [17.50](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/17.50)
 - [28.30](https://github.com/gavbowersdomain/Fortnite-Sig-Bypass/tree/28.30)
