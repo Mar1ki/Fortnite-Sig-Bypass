@@ -5,11 +5,14 @@ using namespace std;
 DWORD WINAPI Main(LPVOID)
 {
     static auto Base = __int64(GetModuleHandleW(0));
+    BYTE invalidpakBytes[6];
+    ReadProcessMemory(GetCurrentProcess(), (LPCVOID)(Base + 0x499B19B), invalidpakBytes, 6, NULL);
+    
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x499B19B), "\x90\x90\x90\x90\x90\x90", 6, NULL); // pak is invalid
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x34D8DC8 + 2), "\x00", 1, NULL); // failed to decrypt toc signature
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x34D1035 + 4), "\x00", 1, NULL); // missing signature
     Sleep(3500); // Restore bytes so it doesnt crash
-    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x499B19B), "\x0F\x84\x46\x09\x00\x00", 6, NULL); // pak is invalid
+    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x499B19B), invalidpakBytes, 6, NULL); // pak is invalid
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x34D8DC8 + 2), "\x0C", 1, NULL); // failed to decrypt toc signature
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x34D1035 + 4), "\x0C", 1, NULL); // missing signature
 
