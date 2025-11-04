@@ -5,9 +5,9 @@ using namespace std;
 DWORD WINAPI Main(LPVOID)
 {
     static auto Base = __int64(GetModuleHandleW(0));
-    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x11CC846), "\x90\x90\x90\x90\x90\x90", 6, NULL); // pak is invalid
-    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x3348EE2 + 2), "\x00", 1, NULL); // failed to decrypt toc signature
-    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x32A24F7 + 3), "\x00", 1, NULL); // missing signature
+    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x39179EB), "\x90\x90\x90\x90\x90\x90", 6, NULL); // pak is invalid
+    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x5F3EB84 + 2), "\x00", 1, NULL); // failed to decrypt toc signature
+    WriteProcessMemory(GetCurrentProcess(), (LPVOID)(Base + 0x5F3E845 + 4), "\x00", 1, NULL); // missing signature
 
     return 0;
 }
